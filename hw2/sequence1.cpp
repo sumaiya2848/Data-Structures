@@ -12,9 +12,9 @@ namespace main_savitch_3 {
   sequence::sequence() {
 
 		used = 0; //no inputs
-		current_index = 0; 
-
-	}
+		current_index = 0;
+  
+  	}
 
 //Postcondition: The first item on the sequence becomes the current item (but if the sequence is empty, then there is no current item).
   void sequence::start() {
@@ -45,7 +45,7 @@ namespace main_savitch_3 {
     data[current_index] = entry; //insert entry to new empty current_index
     used++;
 
-    }
+   	 }
 
 //Precondition: size( ) < CAPACITY.
 //Postcondition: A new copy of entry has been inserted in the sequence after the current item. If there was no current item, then the new entry has been attached to the end of the sequence. In either case, the newly inserted item is now the current item of the sequence.
@@ -60,7 +60,7 @@ namespace main_savitch_3 {
       data[current_index] = entry; //insert entry to new empty current_index
       used++;
 
-    }
+   	 }
     
 //Precondition: is_item returns true.
 //Postcondition: The current item has been removed from the sequence, and the item after this (if there is one) is now the new current item.
